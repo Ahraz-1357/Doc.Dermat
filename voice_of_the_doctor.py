@@ -64,7 +64,7 @@ def text_to_speech_with_gtts(input_text, output_filepath="gtts_testing.mp3"):
 
 
 # --- ELEVENLABS TTS PART ---
-client = ElevenLabs(api_key="sk_2d7efdf1abe9c3a6776680fa273e19801d6dd3381c39b2e3")
+client = ElevenLabs(api_key="enter api key")
 
 def text_to_speech_elevenlabs(input_text, output_filepath="elevenlabs_testing.mp3"):
     audio_stream = client.text_to_speech.convert(
@@ -93,4 +93,5 @@ def text_to_speech_elevenlabs(input_text, output_filepath="elevenlabs_testing.mp
 # --- Example Run --- hre
 input_text = "Hi there, it's Ahraz speaking autoplay from my chatbot!"
 # text_to_speech_with_gtts(input_text)       # gTTS playback
+
 # text_to_speech_elevenlabs(input_text)    # ElevenLabs playback
